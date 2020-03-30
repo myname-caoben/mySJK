@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		搜索  <input type="text" name="" id="text" value="" /><input type="button" name="" id="btn" value="搜索" />
+		<div id="xiala">
+			<!-- <img src="image/1%20(1).jpg" style="width: 400px;height: 400px;">
+			<p>宝宝</p> -->
+		</div>
+	</body>
+</html>
+<script src="js/jquery-3.2.1.min.1.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(function(){
+		
+		
+		$.get("getGoodsList.php",function(data){
+		    let arr = JSON.parse(data);
+			console.log(arr);
+		$("#text").keyup(function(){
+			  $.get("getGoodsList.php",function(data){
+             let objs = JSON.parse(data );
+             $("#searecCon")[0].onkeydown = function(){
+				
+                let htmlStr = "";
+             for(let i=0;i<objs.length;i++){
+                 if(objs[i].goodsName.indexOf($('#searecCon').val())!=-1){
+                    htmlStr += histryInfo(objs[i]);
+                    $("#rightJiLu>h3").html(`主要搜索结果为"${$('#searecCon').val()}"`);
+                 }else{
+					 htmlStr="";
+                    $("#rightJiLu>h3").html(`没有产品搜索结果"${$('#searecCon').val()}"`);
+                 }
+             }
+            //  for(let i=0;i<objs.length;i++){
+            //     if(objs[i].goodsName.indexOf($('#searecCon').val())!=-1){
+            //         htmlStr="";
+            //         $("#rightJiLu>h3").html(`没有产品搜索结果"${$('#searecCon').val()}"`);
+            //     }
+            //  }
+             $(".hostry").html(htmlStr);
+             imgAndCol();
+            }
+        })
+    
+			
+			
+			
+			let val = $("#text").val();
+			console.log(val);
+			let  htmlStr  = "";
+			for(let i=0;i<arr.length;i++){
+				if(arr[i].goodsName.indexOf(val)!=-1){
+					htmlStr += `
+						<img src="${arr[i].goodsImg}" style="width: 400px;height: 400px;">
+						<p>${arr[i].goodsName}</p>
+					`;
+				}
+				// else{
+				// 	htmlStr += `
+				// 		<p>没有找到该商品</p>
+				// 	`;
+				// }
+			}
+			$("#xiala").html(htmlStr);
+			if(val == ""){
+				$("#xiala").html("");
+			}
+		})
+	})
+	})
+</script>

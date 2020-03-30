@@ -1,0 +1,14 @@
+#content_list #bigImg {
+  width: 49.9%;
+  height: 567.88px;
+  box-sizing: border-box;
+  padding: 0;
+  text-align: center;
+  line-height: 30px; }
+  #content_list #bigImg p {
+    margin-top: 55%; }
+  #content_list #bigImg #s {
+    display: block;
+    position: static;
+    height: 20px;
+    color: #000; }

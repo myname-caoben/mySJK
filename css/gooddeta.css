@@ -1,0 +1,134 @@
+#content {
+  background-color: #E6E6E6;
+  width: 100%;
+  position: relative;
+  padding-top: 100px; }
+
+#ball {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 60px; }
+  #ball ul li {
+    width: 8px;
+    height: 8px;
+    border: 2px solid gray;
+    border-radius: 50%;
+    margin-top: 20px; }
+
+#detaImg {
+  width: 60%;
+  text-align: center; }
+  #detaImg ul {
+    margin-left: 200px; }
+    #detaImg ul li {
+      margin-bottom: 20px;
+      width: 800px;
+      height: 800px; }
+      #detaImg ul li img {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0; }
+        #detaImg ul li img:hover {
+          cursor: crosshair; }
+
+#deta {
+  width: 40%;
+  position: fixed;
+  top: 240px;
+  left: 60%; }
+  #deta > div {
+    width: 306px; }
+    #deta > div div {
+      width: 100%; }
+
+.bottom {
+  border-bottom: 1px solid gray; }
+
+.deta_name {
+  font-size: 20px;
+  line-height: 34px;
+  font-weight: 100; }
+  .deta_name h3 {
+    font-weight: 100; }
+  .deta_name i {
+    display: block;
+    margin-bottom: 20px; }
+
+.deta_logo {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 30px; }
+  .deta_logo > span {
+    display: block;
+    line-height: 40px; }
+  .deta_logo div {
+    padding: 2px;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    vertical-align: middle; }
+    .deta_logo div span {
+      vertical-align: middle; }
+    .deta_logo div img {
+      vertical-align: middle;
+      width: 1.875rem;
+      height: 1.875rem; }
+
+.deta_add {
+  font-size: 12px; }
+  .deta_add i {
+    color: #666; }
+
+.deta_btn {
+  display: block;
+  height: 40px;
+  width: 100%;
+  color: white;
+  margin-top: 12px;
+  margin-bottom: 12px; }
+
+.deta_finde {
+  font-size: 12px;
+  padding: 8px 0; }
+  .deta_finde span {
+    display: inline-block;
+    line-height: 20px;
+    padding: 0 10px; }
+    .deta_finde span:hover {
+      color: gray;
+      cursor: pointer; }
+  .deta_finde > :first-child {
+    border-right: 1px solid #333; }
+
+.deta_share {
+  font-size: 12px;
+  color: #666;
+  line-height: 50px; }
+  .deta_share span {
+    margin-left: 12px; }
+    .deta_share span:hover {
+      color: gray;
+      cursor: pointer; }
+
+.deta_details {
+  font-size: 12px;
+  line-height: 50px;
+  margin-bottom: 6px; }
+  .deta_details:hover {
+    color: gray;
+    cursor: pointer; }
+  .deta_details span {
+    text-align: right;
+    float: right; }
+
+.deta_qurey {
+  font-size: 12px;
+  color: #666;
+  line-height: 20px; }
+  .deta_qurey i {
+    float: right; }
+    .deta_qurey i:hover {
+      cursor: pointer; }
+  .deta_qurey span:hover {
+    cursor: pointer; }

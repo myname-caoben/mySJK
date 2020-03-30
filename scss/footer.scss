@@ -1,0 +1,155 @@
+@charset "utf-8";
+.icon {
+  width: 1em;
+  height: 1em;
+  use{
+	  color: red;
+  }
+  vertical-align: -0.15em;
+  // fill: red;
+  overflow: hidden;
+}
+#footer{
+	width: 100%;
+	height:400px;
+	background-color: (#1b1b1b); 
+	// text-align: center;
+}
+.footer{
+	width: 1200px;
+	height: 400px;
+	font-size: 12px;
+	padding-top: 60px ;
+	box-sizing: border-box;
+	position: relative;
+	margin: auto;
+}
+.footer_ul a{
+	color: (#E5DFD9);
+	line-height: 30px;
+}
+.footer_ul span{
+	color: (#4D4B4A);
+	line-height: 20px;
+	margin-right:6px; 
+}
+.footer_ul{
+	width: 200px;
+	float: left;
+	color: (#E5DFD9);
+	font-size: 11px;
+	>:first-child{
+		color: (#7F7C79);
+		font-size: 14px;
+		padding-bottom: 20px;
+	}
+	a:hover span{
+		color: (#fff);
+	}
+	a:hover{
+		color: (#fff);
+	}
+}
+#footer_ul{
+	position: relative;
+}
+.footer_2{
+	position: absolute;
+	top: 170px;
+}
+#dianzi{
+	color: (#7F7C79);
+	width: 400px;
+	height: 300px;
+	position: absolute;
+	top: 60px;
+	right: 0;
+}
+//yinsi
+.treaty{
+	margin-top:12px; 
+	color: (#E5DFD9);
+}
+// email
+.foot_email{
+	margin-top: 24px;
+	margin-bottom: 20px;
+	input{
+		width: 180px;
+		height: 28px;
+		color: (#E5DFD9);
+		background: (#000);
+		border: none;
+		outline: none;
+		font-size: 12px;
+		padding-left: 10px;
+	}
+}
+
+.foot_email input:focus {
+		outline: none;
+		background-color: (#fff);
+		color: #1b1b1b;
+	}
+.dianzi_4{ 
+	margin: 20px 0;
+}
+// 下拉框
+#dianzi select{
+	margin-bottom: 16px;
+	cursor: pointer;
+	color: (#E5DFD9);
+	padding-left: 10px;
+	width: 140px;
+	height: 28px;
+	border: none;
+	background: (#000);
+	background-image:none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+#dianzi select:focus {
+		outline: none;
+	}
+		
+//底部logo
+#foot_logo{
+	margin-top: 16px;
+}
+#foot_logo>span{
+	font-size: 50px;
+	margin-left: 4px;
+}
+#foot_logo>span:hover{
+	color: #fff;
+	cursor: pointer;
+}
+.footer_bottom{
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	color: (#7F7C79);
+	font-size: 12px;
+	font-weight: 800;
+}
+.footer_bottom>p{
+	display: inline-block;
+	margin-right: 40px;
+}
+.footer_bottom a{
+	color: (#7F7C79);
+	font-size: 12px;
+	font-weight: 800;
+}
+.footer_bottom>:nth-child(2)>span{
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background: url(../img/icon.png) no-repeat -664px -38px;
+}
+.footer_bottom>:nth-child(3)>span{
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background: url(../img/icon.png) no-repeat -575px -82px;
+}
